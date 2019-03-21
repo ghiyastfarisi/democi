@@ -1,0 +1,8 @@
+{
+  "name": "democi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ghiyastfarisi/democi.git",
+  "author": "ghiyastfarisi <ghiyast.farisi@gmail.com>",
+  "license": "MIT"
+}
