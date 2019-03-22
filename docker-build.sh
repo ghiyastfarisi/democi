@@ -1,1 +1,1 @@
-docker build -t democi:v1-alpine -f AlpineDockerfile .
+docker build -t democi:v1 -f Dockerfile .
