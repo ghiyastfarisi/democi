@@ -84,6 +84,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
-	<script src="<?php echo base_url('parcel/main/app.js') ?>"></script>
+	<script src="<?php echo base_url('bundle/core.js') ?>"></script>
 </body>
 </html>

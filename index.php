@@ -53,7 +53,7 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', null !== getenv('CI_ENV') ? getenv('CI_ENV') : 'development');
+	define('ENVIRONMENT', getenv('CI_ENV') ? getenv('CI_ENV') : 'development');
 
 /*
  *---------------------------------------------------------------
