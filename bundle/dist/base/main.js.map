@@ -1,0 +1,1 @@
+{"version":3,"sources":["base/main.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAI","file":"main.js","sourceRoot":"..","sourcesContent":["console.log('main js from bundle/base');\n"]}

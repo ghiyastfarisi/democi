@@ -6,6 +6,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Democi - moeghifar</title>
+	<?php
+		$this->load->view('builder/css');
+	?>
 </head>
 <body>
 <div id="container">
@@ -17,6 +20,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$this->load->view($pageTemplate);
 	?>
 </div>
-<script src="<?php echo base_url('bundle/core.js') ?>"></script>
+<script src="<?php echo base_url('bundle/dist/main.js') ?>"></script>
+<?php
+	$this->load->view('builder/js');
+?>
 </body>
 </html>
