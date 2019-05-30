@@ -1,12 +1,18 @@
 {
-  "name": "democi",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:ghiyastfarisi/democi.git",
-  "author": "ghiyastfarisi <ghiyast.farisi@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"dev": "parcel bundle/* --out-dir bundle/dist",
-		"build": "parcel build bundle/*.js bundle/base/* bundle/pages/*/* --out-dir bundle/dist"
-	}
+ "name": "democi",
+ "version": "1.0.0",
+ "main": "index.js",
+ "repository": "git@github.com:ghiyastfarisi/democi.git",
+ "author": "ghiyastfarisi <ghiyast.farisi@gmail.com>",
+ "license": "MIT",
+ "scripts": {
+  "build": "parcel build bundle/application/**/**/*.js --out-dir bundle/dist"
+ },
+ "devDependencies": {
+  "parcel-bundler": "^1.12.3"
+ },
+ "dependencies": {
+  "bootstrap": "3.3.7",
+  "jquery": "^3.4.1"
+ }
 }

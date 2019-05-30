@@ -5,13 +5,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta content="Democi" name="description" />
+	<meta content="Moeghifar" name="author" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<link rel="icon" href="/asset/static/gf-favicon.png">
+
 	<title>Democi - moeghifar</title>
 	<?php
-		$this->load->view('builder/css');
+		$base_css = array(
+			'@/lib/main.css',
+			'@/builder/base.css'
+		);
+		$data['include_css'] = (isset($include_css)) ? array_merge($base_css, $include_css) : $base_css;
+		$this->load->view('builder/css', $data);
 	?>
 </head>
 <body>
-<div id="container">
+<div class="container">
+	<div class="row">
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+	</div>
 	<?php
 		if(!isset($page)) {
 			show_404();
@@ -20,9 +48,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$this->load->view($pageTemplate);
 	?>
 </div>
-<script src="<?php echo base_url('bundle/dist/main.js') ?>"></script>
 <?php
-	$this->load->view('builder/js');
+	$base_js = array(
+		'@/lib/main.js',
+		'@/builder/base.js'
+	);
+	$data['include_js'] = (isset($include_js)) ? array_merge($base_js, $include_js) : $base_js;
+	$this->load->view('builder/js',  $data);
 ?>
 </body>
 </html>

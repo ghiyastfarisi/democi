@@ -3,7 +3,7 @@ php, codeigniter, yarn, parceljs, docker, apache
 
 ## requirement
 - docker installation
-- yarn or npm installation
+- yarn or npm installation (yarn recommended)
 
 ## how to run
 - run `yarn install` or `npm install`

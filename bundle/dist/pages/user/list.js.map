@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/user/list.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAR","file":"list.js","sourceRoot":"..","sourcesContent":["console.log(`running user/list js!`);\n"]}
