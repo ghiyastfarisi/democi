@@ -13,11 +13,11 @@ php, codeigniter, yarn, parceljs, docker, apache
 
 ## framework structure
 
-# [ PHP Codeigniter ]
+### [ PHP Codeigniter ]
 - able to create own base template builder -> views/builder/$custom_template_name/index.php
 - managed template by pages -> views/pages/$custom_pages_group_name/$custom_file_name.php
 
-# [ Javascript ]
+### [ Javascript ]
 - asset bundler with ParcelJS
 - default folder for bundler is `project_file/bundle`
 - bundle separated into `application`, `dist`, and `template`
