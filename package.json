@@ -6,7 +6,7 @@
  "author": "ghiyastfarisi <ghiyast.farisi@gmail.com>",
  "license": "MIT",
  "scripts": {
-  "build": "parcel build bundle/application/**/**/*.js --out-dir bundle/dist"
+  "build": "parcel build bundle/template/**/**/*.js bundle/application/**/**/*.js --out-dir bundle/dist"
  },
  "devDependencies": {
   "parcel-bundler": "^1.12.3"
