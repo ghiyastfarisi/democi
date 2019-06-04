@@ -6,13 +6,15 @@
  "author": "ghiyastfarisi <ghiyast.farisi@gmail.com>",
  "license": "MIT",
  "scripts": {
-  "build": "parcel build bundle/template/**/**/*.js bundle/application/**/**/*.js --out-dir bundle/dist"
+  "build": "parcel build bundle/application/**/**/*.js --out-dir bundle/dist --public-url ./"
  },
  "devDependencies": {
   "parcel-bundler": "^1.12.3"
  },
  "dependencies": {
   "bootstrap": "3.3.7",
-  "jquery": "^3.4.1"
+  "imports-loader": "^0.8.0",
+  "jquery": "^3.4.1",
+  "jquery-hammerjs": "^2.0.0"
  }
 }

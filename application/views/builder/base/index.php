@@ -17,9 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Democi - moeghifar</title>
 	<?php
 		$base_css = array(
-			'@/application/lib/main.css',
-			'@/application/builder/base.css',
-			'@/template/upbound/upbound.css'
+			// '@/builder/base.css',
+			'@/upbound.css'
 		);
 		$data['include_css'] = (isset($include_css)) ? array_merge($base_css, $include_css) : $base_css;
 		$this->load->view('builder/css', $data);
@@ -37,9 +36,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <?php
 	$base_js = array(
-		'@/application/lib/main.js',
-		'@/application/builder/base.js',
-		'@/template/upbound/upbound.js'
+		'@/lib/main.js',
+		'@/builder/base.js',
+		'@/upbound.js'
 	);
 	$data['include_js'] = (isset($include_js)) ? array_merge($base_js, $include_js) : $base_js;
 	$this->load->view('builder/js',  $data);
