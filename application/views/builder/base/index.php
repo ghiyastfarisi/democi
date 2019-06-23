@@ -17,10 +17,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Democi - moeghifar</title>
 	<?php
 		$base_css = array(
-			// '@/builder/base.css',
 			'@/upbound.css'
 		);
-		$data['include_css'] = (isset($include_css)) ? array_merge($base_css, $include_css) : $base_css;
+		$data['include_css'] = (isset($include_css)) ? array_merge($include_css, $base_css) : $base_css;
 		$this->load->view('builder/css', $data);
 	?>
 </head>
